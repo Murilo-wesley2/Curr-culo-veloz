@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Profissional - Alex Silva</title>
+    <link rel="stylesheet" href="estilo/curriculo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.12.1/html2pdf.bundle.min.js" integrity="sha512-D25Z8/1q2z65ZpJ3NzY6XiPZfwjhbv34OTQHDIZd+KPK+uWCovGt+fMkSzW8ArzCMFUgZt6Cdu7qoXNuy6a2GA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/carregarCurriculo.js" defer></script>
+</head>
+<body class="curriculo">
+
+    <div class="resume-container">
+        <header>
+            <h1 id="nomeCurriculo">Alex Silva</h1>
+            <h2 id="cargoCurriculo">Desenvolvedor Front-End Pleno</h2>
+            <div class="contact-info">
+                <span id="contatoLocal">📍 São Paulo, SP</span> | 
+                <span id="contatoEmail">✉️ alex.silva@email.com</span>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h3>Perfil Profissional</h3>
+                <p id="perfilCurriculo">Desenvolvedor Front-End com mais de 3 anos de experiência na criação de interfaces responsivas e otimizadas. Especialista em React e ecossistema JavaScript. Focado em alinhar os objetivos de negócio à experiência do usuário (UX), com histórico de aumento de 25% na performance de web apps.</p>
+            </section>
+
+            <section>
+                <h3>Experiência Profissional</h3>
+                <ul id="experienciaCurriculo"></ul>
+            </section>
+
+            <section>
+                <h3>Habilidades Técnicas</h3>
+                <div class="skills-container" id="skillsCurriculo"></div>
+            </section>
+
+            <section>
+                <h3>Formação Acadêmica</h3>
+                <div id="formacaoCurriculo"></div>
+            </section>
+        </main>
+    </div>
+    <button id="gerar-pdf">Gerar PDF</button>
+
+</body>
+</html>
