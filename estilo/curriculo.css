@@ -1,0 +1,152 @@
+/* Reset básico de margens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* Container que simula uma folha A4 elegante */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Cabeçalho */
+header {
+    border-bottom: 2px solid #2b4c7e;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #2b4c7e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    color: #555555;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 12px;
+}
+
+/* Seções Gerais */
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 1.15rem;
+    color: #2b4c7e;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Itens de Experiência */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+ul {
+    margin-left: 20px;
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* Tags de Habilidades */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: #f0f4f8;
+    color: #2b4c7e;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #d3e0ea;
+}
+
+/* Formação */
+.education-item {
+    font-size: 0.95rem;
+    color: #444444;
+}
+
+.education-item small {
+    color: #777777;
+}
+
+#gerar-pdf {
+    display: block;
+    border: none;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #31b031;
+    border-radius: 20px;
+}
+
+#gerar-pdf:hover {
+    background-color: #21a021;
+}
+
+/* Ajuste para impressão (Caso queira salvar em PDF) */
+@media print {
+    body {
+        background-color: #ffffff;
+        padding: 0;
+    }
+    
+    .resume-container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        /* Diminui levemente o espaçamento interno para tudo caber em uma folha */
+        font-size: 14px; 
+    }
+
+    section {
+        /* Diminui o espaço entre as seções apenas na hora de gerar o PDF */
+        margin-bottom: 15px; 
+    }
+}
