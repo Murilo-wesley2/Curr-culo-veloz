@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de preenchimento</title>
+    <link rel="stylesheet" href="estilo/global.css">
+</head>
+<body>
+    
+    <div>
+      <h1>Dados Do Currículo</h1>
+      <h2>Dados pessoais</h2>
+      <form>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <label for="estado">Estado: </label>
+        <select name="estado" id="estado">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <label for="municipio">Município: </label>
+        <input type="text" name="municipio" id="municipio">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+      </form>
+
+      <h2>Perfil Profissional</h2>
+      <form>
+        <label for="detalhamento">sobre seu perfil profissional:</label><br>
+        <textarea id="detalhamento" name="detalhamento" rows="8" cols="50"></textarea>
+      </form>
+
+      <h2>Experiência Profissional</h2>
+      <input type="text" id="AdicionarEx" placeholder="Digite aqui">
+      <button id="btAdicionarEx">Adicionar</button>
+      <ul id="experienciasProfissionais"></ul>
+      <script type="text/javascript" src="scripts/adicionarEx.js"></script>
+
+      <h2>Habilidades Técnicas</h2>
+      <input type="text" id="AdicionarPro" placeholder="Digite aqui">
+      <button id="btAdicionarPro">Adicionar</button>
+      <ul id="HabilidadesTecnicas"></ul>
+      <script type="text/javascript" src="scripts/adicionarPro.js"></script>
+
+      <h2>Formação Acadêmica</h2>
+      <form>
+        <label for="curso">Curso: </label>
+        <input type="text" id="AdicionarFormacaoCurso" placeholder="Curso">
+        <label for="instituicao">Instituição: </label>
+        <input type="text" id="AdicionarFormacaoInst" placeholder="Instituição">
+        <label for="conclusao">Conclusão: </label>
+        <input type="date" id="AdicionarFormacaoConclusao">
+        <button type="button" id="btAdicionarFormacao">Adicionar</button>
+      </form>
+      <ul id="formacoesAcademicas"></ul>
+      <script type="text/javascript" src="scripts/adicionarFormacao.js"></script>
+      <button type="button" id="btEnviarCurriculo">Enviar para currículo</button>
+      <script type="text/javascript" src="scripts/enviarCurriculo.js"></script>
+      <button type="button" id="btTestarExemplo">Testar com exemplo e gerar PDF</button>
+      <script type="text/javascript" src="scripts/seedSampleAndSend.js"></script>
+      </div>
+</body>
+</html>
