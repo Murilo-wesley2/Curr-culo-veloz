@@ -17,6 +17,7 @@ header, footer {
 .logo {
     padding-right: 5px;
     max-width: 400px;
+    min-width: 200px;
     width: 35%;
     height: auto;
 }
@@ -30,7 +31,16 @@ main {
     align-content: center;
 }
 
+img {
+    display: block;
+    height: 400px;
+}
+
+.descricao {
+    text-align: justify;
+}
 section {
+    padding: 5px;
     max-width: 80%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -39,6 +49,7 @@ button {
     background-color: #B2D9F7;
     border: none;
     padding: 10px 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 

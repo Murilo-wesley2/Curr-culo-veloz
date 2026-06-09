@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de preenchimento</title>
     <link rel="stylesheet" href="estilo/global.css">
+    <link rel="stylesheet" href="estilo/criar-curriculo.css">
 </head>
-<body>
+<body class="criar-curriculo">
     
-    <div>
+    <main class="form-page-container">
       <h1>Dados Do Currículo</h1>
       <h2>Dados pessoais</h2>
       <form>
@@ -51,20 +52,24 @@
       </form>
 
       <h2>Perfil Profissional</h2>
-      <form>
-        <label for="detalhamento">sobre seu perfil profissional:</label><br>
-        <textarea id="detalhamento" name="detalhamento" rows="8" cols="50"></textarea>
+      <form class="full-width">
+        <label for="detalhamento">Sobre seu perfil profissional:</label>
+        <textarea id="detalhamento" name="detalhamento"></textarea>
       </form>
 
       <h2>Experiência Profissional</h2>
-      <input type="text" id="AdicionarEx" placeholder="Digite aqui">
-      <button id="btAdicionarEx">Adicionar</button>
+      <div class="action-row">
+        <input type="text" id="AdicionarEx" placeholder="Digite aqui">
+        <button id="btAdicionarEx">Adicionar</button>
+      </div>
       <ul id="experienciasProfissionais"></ul>
       <script type="text/javascript" src="scripts/adicionarEx.js"></script>
 
       <h2>Habilidades Técnicas</h2>
-      <input type="text" id="AdicionarPro" placeholder="Digite aqui">
-      <button id="btAdicionarPro">Adicionar</button>
+      <div class="action-row">
+        <input type="text" id="AdicionarPro" placeholder="Digite aqui">
+        <button id="btAdicionarPro">Adicionar</button>
+      </div>
       <ul id="HabilidadesTecnicas"></ul>
       <script type="text/javascript" src="scripts/adicionarPro.js"></script>
 
@@ -80,10 +85,12 @@
       </form>
       <ul id="formacoesAcademicas"></ul>
       <script type="text/javascript" src="scripts/adicionarFormacao.js"></script>
-      <button type="button" id="btEnviarCurriculo">Enviar para currículo</button>
-      <script type="text/javascript" src="scripts/enviarCurriculo.js"></script>
-      <button type="button" id="btTestarExemplo">Testar com exemplo e gerar PDF</button>
-      <script type="text/javascript" src="scripts/seedSampleAndSend.js"></script>
+      <div class="button-group">
+        <button type="button" id="btEnviarCurriculo">Enviar para currículo</button>
+        <button type="button" id="btTestarExemplo">Testar com exemplo e gerar PDF</button>
       </div>
+      <script type="text/javascript" src="scripts/enviarCurriculo.js"></script>
+      <script type="text/javascript" src="scripts/seedSampleAndSend.js"></script>
+    </main>
 </body>
 </html>

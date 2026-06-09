@@ -1,0 +1,190 @@
+/* Estilo específico para criar-curriculo.html */
+body.criar-curriculo {
+    display: block;
+    min-height: 100vh;
+    background-color: #eef3f8;
+    padding: 30px 20px 40px;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-page-container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 16px 36px rgba(31, 64, 105, 0.12);
+    padding: 36px;
+    border: 1px solid rgba(43, 76, 126, 0.08);
+}
+
+.form-page-container h1,
+.form-page-container h2 {
+    color: #2b4c7e;
+    margin-bottom: 18px;
+}
+
+.form-page-container h1 {
+    font-size: clamp(2rem, 2.5vw, 2.6rem);
+    letter-spacing: 0.6px;
+}
+
+.form-page-container h2 {
+    font-size: 1.15rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid #e4e9f1;
+    padding-bottom: 10px;
+}
+
+.form-page-container p {
+    color: #555555;
+    margin-bottom: 18px;
+}
+
+.form-page-container form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 24px;
+    margin-top: 18px;
+}
+
+.form-page-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2b4c7e;
+}
+
+.form-page-container input,
+.form-page-container select,
+.form-page-container textarea {
+    width: 100%;
+    border: 1px solid #d9dee7;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 0.98rem;
+    color: #2f3d4f;
+    background-color: #fbfcfe;
+}
+
+.form-page-container textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+.form-page-container button {
+    appearance: none;
+    border: none;
+    border-radius: 12px;
+    background-color: #487aa1;
+    color: #ffffff;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.form-page-container button:hover,
+.form-page-container button:focus {
+    background-color: #3b6b8f;
+    transform: translateY(-1px);
+}
+
+.form-page-container .form-section {
+    margin-top: 14px;
+}
+
+.form-page-container form.full-width {
+    grid-template-columns: 1fr;
+}
+
+.form-page-container .form-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-page-container .action-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.form-page-container .action-row input {
+    min-width: 0;
+}
+
+.form-page-container .action-row button {
+    min-width: 140px;
+}
+
+.form-page-container ul {
+    list-style: none;
+    margin-top: 16px;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.form-page-container ul li {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #dbe4ee;
+    background-color: #f8fbff;
+    color: #344154;
+}
+
+.form-page-container .action-row + ul {
+    margin-top: 10px;
+}
+
+.form-page-container .button-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.form-page-container .button-group button {
+    flex: 1 1 220px;
+}
+
+@media (max-width: 820px) {
+    .form-page-container {
+        padding: 26px 20px 30px;
+    }
+
+    .form-page-container form,
+    .form-page-container .action-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-page-container .action-row button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    body.criar-curriculo {
+        padding: 16px 12px 24px;
+    }
+
+    .form-page-container {
+        border-radius: 14px;
+        box-shadow: 0 12px 26px rgba(31, 64, 105, 0.14);
+    }
+
+    .form-page-container h1 {
+        font-size: 2rem;
+    }
+
+    .form-page-container h2 {
+        font-size: 1rem;
+    }
+
+    .form-page-container button {
+        width: 100%;
+    }
+}
